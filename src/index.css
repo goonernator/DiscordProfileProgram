@@ -1,0 +1,230 @@
+/* Discord Color Palette */
+:root {
+  --discord-blurple: #5865F2;
+  --discord-green: #57F287;
+  --discord-yellow: #FEE75C;
+  --discord-fuchsia: #EB459E;
+  --discord-red: #ED4245;
+  --discord-white: #FFFFFF;
+  --discord-black: #000000;
+  
+  /* Background colors */
+  --discord-dark: #2C2F33;
+  --discord-darker: #23272A;
+  --discord-light: #36393F;
+  --discord-lighter: #40444B;
+  
+  /* Text colors */
+  --discord-text-normal: #DCDDDE;
+  --discord-text-muted: #72767D;
+  --discord-text-link: #00AFF4;
+  
+  /* Interactive colors */
+  --discord-interactive-normal: #B9BBBE;
+  --discord-interactive-hover: #DCDDDE;
+  --discord-interactive-active: #FFFFFF;
+  --discord-interactive-muted: #4F545C;
+  
+  /* Channel colors */
+  --discord-channels-default: #8E9297;
+  --discord-channel-icon: #6F7378;
+  
+  /* Header colors */
+  --discord-header-primary: #FFFFFF;
+  --discord-header-secondary: #B9BBBE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: var(--discord-light);
+  color: var(--discord-text-normal);
+  line-height: 1.375;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--discord-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--discord-darker);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e2124;
+}
+
+/* Button styles */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--discord-blurple);
+  color: var(--discord-white);
+}
+
+.btn-primary:hover {
+  background-color: #4752C4;
+}
+
+.btn-secondary {
+  background-color: var(--discord-lighter);
+  color: var(--discord-text-normal);
+}
+
+.btn-secondary:hover {
+  background-color: #484C52;
+}
+
+.btn-success {
+  background-color: var(--discord-green);
+  color: var(--discord-white);
+}
+
+.btn-success:hover {
+  background-color: #3BA55D;
+}
+
+.btn-danger {
+  background-color: var(--discord-red);
+  color: var(--discord-white);
+}
+
+.btn-danger:hover {
+  background-color: #C73E41;
+}
+
+/* Input styles */
+.input {
+  background-color: var(--discord-darker);
+  border: 1px solid var(--discord-dark);
+  border-radius: 4px;
+  color: var(--discord-text-normal);
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--discord-blurple);
+}
+
+.input::placeholder {
+  color: var(--discord-text-muted);
+}
+
+/* Card styles */
+.card {
+  background-color: var(--discord-darker);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--discord-dark);
+}
+
+.card-header {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--discord-dark);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--discord-header-primary);
+  margin-bottom: 4px;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: var(--discord-text-muted);
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-1 { margin-bottom: 4px; }
+.mb-2 { margin-bottom: 8px; }
+.mb-3 { margin-bottom: 12px; }
+.mb-4 { margin-bottom: 16px; }
+.mb-5 { margin-bottom: 20px; }
+
+.mt-1 { margin-top: 4px; }
+.mt-2 { margin-top: 8px; }
+.mt-3 { margin-top: 12px; }
+.mt-4 { margin-top: 16px; }
+.mt-5 { margin-top: 20px; }
+
+.p-1 { padding: 4px; }
+.p-2 { padding: 8px; }
+.p-3 { padding: 12px; }
+.p-4 { padding: 16px; }
+.p-5 { padding: 20px; }
+
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-center { justify-content: center; align-items: center; }
+.flex-between { justify-content: space-between; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-1 { flex: 1; }
+
+.gap-1 { gap: 4px; }
+.gap-2 { gap: 8px; }
+.gap-3 { gap: 12px; }
+.gap-4 { gap: 16px; }
+.gap-5 { gap: 20px; }
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
