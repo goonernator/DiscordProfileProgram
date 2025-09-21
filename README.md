@@ -132,10 +132,6 @@ The application uses Discord's official color palette and design principles:
 - Dark theme with proper contrast ratios
 - Smooth animations and transitions
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
 ### Development Workflow
 
 1. Fork the repository
@@ -154,11 +150,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The React and Vite communities for excellent tooling
 - All contributors who help make this project better
 
-## 📞 Support
-
-If you encounter any issues or have questions:
-- Open an [issue](https://github.com/yourusername/discord-utility-toolkit/issues)
-- Check the [documentation](https://github.com/yourusername/discord-utility-toolkit/wiki)
 
 ---
 
